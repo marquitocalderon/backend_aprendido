@@ -21,7 +21,7 @@ const pg_1 = require("pg");
 // });
 const conectar = new pg_1.Pool({
     connectionString: process.env.DATABASE_URL,
-    // ssl:true
+    ssl: true
 });
 exports.conectar = conectar;
 // Función para conectar y manejar la lógica de conexión
